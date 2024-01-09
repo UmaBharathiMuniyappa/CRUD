@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Display Institute</h1>
+    <table border="3px">
+    <tr>
+        <th>Institute</th>
+        <th>Branch</th>
+    </tr>
+    {% for ist in institute %}
+    <tr>
+        <td>{{ist.inst_name}}</td>
+        <td>{{ist.branch}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
